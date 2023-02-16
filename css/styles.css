@@ -73,6 +73,7 @@ body {
 
 .logo-web {
   color: var(--primary-brand-color);
+  display: inline-block;
 }
 .main-nav,
 .link-nav,
@@ -81,11 +82,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
 }
 
-.logo-web {
+/*.logo-web {
   margin-right: 76px;
-}
+}*/
 
 .site-nav .item:not(:last-child),
 .head-content .item:not(:last-child) {
@@ -136,16 +138,19 @@ body {
 .hero-title {
   color: var(--white-color);
   font-weight: 700;
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 48px;
+  margin: auto;
 }
 
 .btn {
   cursor: pointer;
   border: none;
+  border-color: transparent;
 }
 
 .btn-hero {
@@ -186,15 +191,25 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+.section-main {
+  padding-bottom: 120px;
+}
 .section-title {
   color: var(--dark-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-bottom: 72px;
+  padding-top: ;
 }
 /* Studio / Description of studio */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 .main-desc {
   padding-top: 120px;
@@ -205,13 +220,11 @@ body {
   display: none;
 }
 
-.main-desc,
-.list.desc {
+.desc {
   display: flex;
 }
 
 .list.desc {
-  flex-direction: row;
   gap: 24px;
 }
 
@@ -257,10 +270,17 @@ body {
   gap: 24px;
 }
 /* Section3 Contacts / Main team of studio */
+.section-team {
+  padding-bottom: 120px;
+  padding-top: 120px;
+  background-color: #f4f4fd;
+}
 .main-team {
   background-color: var(--light-color);
   padding-bottom: 120px;
   padding-top: 120px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-team .section-title {
@@ -322,11 +342,11 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 96px;
+  padding-bottom: 120px;
 }
 
 .prt-section {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 .section-title.prt-title {
@@ -337,6 +357,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding-top: 96px;
 }
 
 .btn-filters {
@@ -371,6 +392,7 @@ body {
   justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
+  padding-bottom: 120px;
 }
 
 .filter {
@@ -412,10 +434,10 @@ body {
   padding-bottom: 100px;
 }
 
-.foot-logo {
+/*.foot-logo {
   text-align: left;
   margin-bottom: 16px;
-}
+}*/
 
 .footer-studio {
   color: var(--light-color);
