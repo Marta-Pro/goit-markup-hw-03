@@ -75,8 +75,15 @@ body {
   color: var(--primary-brand-color);
   display: inline-block;
 }
-.main-nav,
-.link-nav,
+.link-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.main-nav,/*
+.link-nav,*/
 .site-nav,
 .head-content {
   display: flex;
@@ -91,7 +98,7 @@ body {
 
 .site-nav .item:not(:last-child),
 .head-content .item:not(:last-child) {
-  margin-right: 40px;
+  gap: 40px;
 }
 
 .anchors {
@@ -161,7 +168,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  margin-top: 48px;
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -201,7 +208,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 /* Studio / Description of studio */
 .img {
@@ -276,8 +283,8 @@ body {
 }
 .main-team {
   background-color: var(--light-color);
-  padding-bottom: 120px;
-  padding-top: 120px;
+  margin-bottom: 120px;
+  margin-top: 120px;
   margin: 0;
   padding: 0;
 }
@@ -338,14 +345,14 @@ body {
 /* MAIN CONTENT */
 
 .section-title.prt {
-  padding: 0;
-  margin: 0;
   margin-top: 96px;
   padding-bottom: 120px;
+  padding-top: 72px;
 }
 
 .prt-section {
   padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 .section-title.prt-title {
@@ -353,10 +360,10 @@ body {
 }
 
 .btn-prt.list {
+  padding-top: 96px;
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
 }
 
 .btn-filters {
@@ -367,7 +374,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  border: 1px solid #e7e9fc;
   border-radius: 4px;
   min-height: 48px;
   padding: 12px 24px;
@@ -391,7 +398,6 @@ body {
   justify-content: center;
   column-gap: 24px;
   row-gap: 48px;
-  padding-bottom: 120px;
 }
 
 .filter {
@@ -456,5 +462,6 @@ body {
   text-align: left;
   width: 264px;
   margin-bottom: 0;
+  margin-top: 16px;
 }
 /* FOOTER */
