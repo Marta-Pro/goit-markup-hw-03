@@ -202,7 +202,8 @@ body {
   padding-bottom: 120px;
 }
 .section-title {
-  padding: 96px 156px 120px 156px;
+  margin-bottom: 72px;
+
   text-align: center;
   font-size: 36px;
   line-height: 40px;
@@ -322,7 +323,7 @@ img {
 
 .desc-text,
 .team-text {
-  color: var(--dark-color);
+  color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -343,11 +344,9 @@ img {
 /* portfolio.css */
 /* MAIN CONTENT */
 
-.section-title.prt {
-  margin-top: 96px;
+.section-title-prt {
+  padding-top: 96px;
   padding-bottom: 120px;
-  padding-top: 72px;
-  padding: 96px;
 }
 
 .prt-section {
@@ -458,7 +457,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
   width: 264px;
   margin-bottom: 0;
   margin-top: 16px;
